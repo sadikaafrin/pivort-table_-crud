@@ -1,0 +1,186 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Enum\Page;
+use App\Enum\Section;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class CmsSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        DB::table('cms')->insert([
+            [
+                'page_name' => Page::HOME->value,
+                'section_name' => Section::HERO_SECTION->value,
+                'title' => 'Welcome to Our Website',
+                'sub_title' => 'Best services for you',
+                'image_url' => 'backend/images/68f2476537da667d7a35be9ce096b483.png',
+                'background_image' => null,
+                'description' => 'This is the main hero section of the website.',
+                'sub_description' => null,
+                'button_text' => null,
+                'button_url' => null,
+                'other' => null,
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'page_name' => Page::HOME->value,
+                'section_name' => Section::WHY_CHOOSE_US->value,
+                'title' => 'Who We Are',
+                'sub_title' => null,
+                'image_url' => 'backend/images/1e8247c11a65318e5bbce1fc61b44bbe.jpg',
+                'background_image' => null,
+                'description' => 'We are a leading company in the industry.',
+                'sub_description' => null,
+                'button_text' => null,
+                'button_url' => null,
+                'other' => null,
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'page_name' => Page::ABOUT_US->value,
+                'section_name' => Section::ABOUT_US->value,
+                'title' => 'About Us',
+                'sub_title' => "Lorem Ipsum is simply dummy text ofwhen antly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                'image_url' => 'backend/images/1e8247c11a65318e5bbce1fc61b44bbe.jpg',
+                'background_image' => null,
+                'description' => null,
+                'sub_description' => null,
+                'button_text' => null,
+                'button_url' => null,
+                'other' => null,
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'page_name' => Page::OUR_STORY->value,
+                'section_name' => Section::OUR_STORY->value,
+                'title' => 'Our Story',
+                'sub_title' => "Lorem Ipsum is simply dummy text ofwhen antly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                'image_url' => 'backend/images/1e8247c11a65318e5bbce1fc61b44bbe.jpg',
+                'background_image' => null,
+                'description' => null,
+                'sub_description' => null,
+                'button_text' => null,
+                'button_url' => null,
+                'other' => null,
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'page_name' => Page::OUR_MISSION->value,
+                'section_name' => Section::OUR_MISSION->value,
+                'title' => 'Our Mission',
+                'sub_title' => "Lorem Ipsum is simply dummy text ofwhen antly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                'image_url' => 'backend/images/1e8247c11a65318e5bbce1fc61b44bbe.jpg',
+                'background_image' => null,
+                'description' => null,
+                'sub_description' => null,
+                'button_text' => null,
+                'button_url' => null,
+                'other' => null,
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'page_name' => Page::OUR_VISION->value,
+                'section_name' => Section::OUR_VISION->value,
+                'title' => 'Our Vision',
+                'sub_title' => "Lorem Ipsum is simply dummy text ofwhen antly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                'image_url' => 'backend/images/1e8247c11a65318e5bbce1fc61b44bbe.jpg',
+                'background_image' => null,
+                'description' => null,
+                'sub_description' => null,
+                'button_text' => null,
+                'button_url' => null,
+                'other' => null,
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            // [
+            //     'page_name' => Page::What_WE_Offer->value,
+            //     'section_name' => Section::What_WE_Offer->value,
+            //     'title' => 'Our Vision',
+            //     'sub_title' => "Lorem Ipsum is simply dummy text ofwhen antly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            //     'image_url' => null,
+            //     'background_image' => null,
+            //     'description' => null,
+            //     'sub_description' => null,
+            //     'button_text' => null,
+            //     'button_url' => null,
+            //     'other' => null,
+            //     'status' => 'active',
+            //     'created_at' => now(),
+            //     'updated_at' => now(),
+            // ],
+
+            [
+                'page_name' => Page::What_WE_Offer->value,
+                'section_name' => Section::CUSTOM_PACKAGE->value,
+                'title' => 'Custom Packaging',
+                'sub_title' => "Lorem Ipsum is simply dummy text ofwhen antly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                'image_url' => 'backend/images/1e8247c11a65318e5bbce1fc61b44bbe.jpg',
+                'background_image' => null,
+                'description' => null,
+                'sub_description' => null,
+                'button_text' => null,
+                'button_url' => null,
+                'other' => null,
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'page_name' => Page::What_WE_Offer->value,
+                'section_name' => Section::STOCK_OPTION->value,
+                'title' => 'Stock Option',
+                'sub_title' => "Lorem Ipsum is simply dummy text ofwhen antly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                'image_url' => 'backend/images/1e8247c11a65318e5bbce1fc61b44bbe.jpg',
+                'background_image' => null,
+                'description' => null,
+                'sub_description' => null,
+                'button_text' => null,
+                'button_url' => null,
+                'other' => null,
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'page_name' => Page::What_WE_Offer->value,
+                'section_name' => Section::SUSTAINABLE_CHOICE->value,
+                'title' => 'Sustainable Choice',
+                'sub_title' => "Lorem Ipsum is simply dummy text ofwhen antly with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+                'image_url' => 'backend/images/1e8247c11a65318e5bbce1fc61b44bbe.jpg',
+                'background_image' => null,
+                'description' => null,
+                'sub_description' => null,
+                'button_text' => null,
+                'button_url' => null,
+                'other' => null,
+                'status' => 'active',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ]);
+    }
+}
