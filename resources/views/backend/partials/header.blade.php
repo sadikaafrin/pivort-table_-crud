@@ -23,6 +23,16 @@
         </div>
 
         <div class="d-flex align-items-stretch justify-content-end flex-lg-grow-1">
+            <form action="{{ route('change.lang', ['lang' => app()->getLocale()]) }}" method="GET" class="d-inline">
+                <select name="lang" class="form-select" onchange="this.form.submit()">
+                    <option value="en" {{ app()->getLocale() == 'en' ? 'selected' : '' }}>English</option>
+                    <option value="bn" {{ app()->getLocale() == 'bn' ? 'selected' : '' }}>বাংলা</option>
+                </select>
+            </form>
+        </div>
+
+     
+        <div class="d-flex align-items-stretch justify-content-end flex-lg-grow-1">
 
             <div class="d-flex align-items-stretch flex-shrink-0">
 
@@ -67,7 +77,8 @@
                                 class="menu-link px-5">
                                 Sign Out
                             </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                style="display: none;">
                                 @csrf
                             </form>
                         </div>

@@ -13,8 +13,12 @@ use App\Http\Controllers\Web\Backend\WhyChooseController;
 use App\Http\Controllers\Web\Backend\CmsWhatWeOfferController;
 use App\Http\Controllers\Web\Backend\VersionController;
 use App\Http\Controllers\Web\Backend\AvailableBalanceController;
+use App\Http\Controllers\Web\Backend\LanguageController;
+
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+
+Route::get('/lang/{lang}', [LanguageController::class, 'change'])->name("change.lang");
 
 Route::controller(BlogCategoryController::class)->group(function () {
     Route::get('/blog-category', 'index')->name('admin.blog.categories.index');
