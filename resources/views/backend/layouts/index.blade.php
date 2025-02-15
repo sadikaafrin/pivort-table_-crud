@@ -49,7 +49,7 @@
                         <div class="card-body d-flex justify-content-between">
                             <div>
                                 <h1 class="fs-2hx fw-bold text-gray-800 me-2 lh-1">2</h1>
-                                <h4 class="fs-4 fw-semibold text-gray-400 mt-5">Total Blog</h4>
+                                <h4 class="fs-4 fw-semibold text-gray-400 mt-5">{{ __('messages.total_blog') }}</h4>
                             </div>
 
                         </div>
@@ -61,7 +61,7 @@
                         <div class="card-body d-flex justify-content-between">
                             <div>
                                 <h1 class="fs-2hx fw-bold text-gray-800 me-2 lh-1">2</h1>
-                                <h4 class="fs-4 fw-semibold text-gray-400 mt-5">Total Service</h4>
+                                <h4 class="fs-4 fw-semibold text-gray-400 mt-5">{{ __('messages.total_users') }}</h4>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                         <div class="card-body d-flex justify-content-between">
                             <div>
                                 <h1 class="fs-2hx fw-bold text-gray-800 me-2 lh-1">2</h1>
-                                <h4 class="fs-4 fw-semibold text-gray-400 mt-5">Total Product</h4>
+                                <h4 class="fs-4 fw-semibold text-gray-400 mt-5">{{ __('messages.total_product') }}</h4>
                             </div>
                         </div>
                     </div>

@@ -18,7 +18,7 @@ use App\Http\Controllers\Web\Backend\LanguageController;
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
 
-Route::get('/lang/{lang}', [LanguageController::class, 'change'])->name("change.lang");
+Route::get('/lang/{lan}', [LanguageController::class, 'change'])->name("change.lang");
 
 Route::controller(BlogCategoryController::class)->group(function () {
     Route::get('/blog-category', 'index')->name('admin.blog.categories.index');
